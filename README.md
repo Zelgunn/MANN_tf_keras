@@ -1,4 +1,4 @@
-### One-shot MANN using Tensorflow and Github
+### One-shot MANN using Tensorflow and Keras
 
 #### Original paper
 
