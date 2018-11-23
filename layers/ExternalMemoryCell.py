@@ -74,7 +74,7 @@ class ExternalMemoryCell(DeepLayer):
         prev_read_weights = tf.reshape(prev_read_weights, [-1, self.read_heads_count, self.memory_height])
 
         hidden_state, cell_state = self.controller_lstm_step(inputs, prev_hidden_state,
-                                                             prev_hidden_state, prev_read_vector)
+                                                             prev_cell_state, prev_read_vector)
 
         def query(layer):
             layer = layer(hidden_state)
